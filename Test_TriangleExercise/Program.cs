@@ -32,7 +32,8 @@ namespace Test_TriangleExercise
 
             Triangle.SetTriangleType();
 
-            Console.WriteLine(Triangle.GetTriangleType());
+            Console.WriteLine("Triangle is: " + Triangle.GetTriangleType());
+            Continue();
         }
 
         static void TriangleCreationSequence()
@@ -48,6 +49,16 @@ namespace Test_TriangleExercise
             Console.WriteLine(Triangle1.GetTriangleType());
             Console.WriteLine(Triangle2.GetTriangleType());
             Console.WriteLine(Triangle3.GetTriangleType());
+        }
+
+        static void Continue()
+        {
+            Console.WriteLine("Continue? Y/N");
+            string input = Console.ReadLine();
+            while(input == "Y")
+            {
+                TriangleCreation();
+            }
         }
     }
 }
