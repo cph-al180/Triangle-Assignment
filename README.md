@@ -1,4 +1,4 @@
-# Triangle-Assignment
+# Test Cases
 
 <table>
   <thead>
