@@ -13,6 +13,7 @@
             this.a = a;
             this.b = b;
             this.c = c;
+            SetTriangleType();
         }
 
         public TriangleType GetTriangleType() {
@@ -34,7 +35,7 @@
             return c;
         }
 
-        public void SetTriangleType()
+        void SetTriangleType()
         {
             if(a == b && b == c)
             {

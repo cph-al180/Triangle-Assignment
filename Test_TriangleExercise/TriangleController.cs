@@ -61,7 +61,6 @@ namespace Test_TriangleExercise
                 }
             }
             Triangle triangle = new Triangle(sides[0], sides[1], sides[2]);
-            triangle.SetTriangleType();
             Console.WriteLine("Triangle is: " + triangle.GetTriangleType());
         }
     }
