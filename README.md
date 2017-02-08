@@ -29,8 +29,12 @@
       <td>Scalene</td>
     </tr>
     <tr>
-      <td>Letter or Word</td>
-      <td>Invalid Input</td>
+      <td>"String"</td>
+      <td>Invalid input - Must be an integer</td>
+    </tr>
+     <tr>
+      <td>0</td>
+      <td>Invalid input - Must be greater than 0</td>
     </tr>
   </tbody>
 </table>
