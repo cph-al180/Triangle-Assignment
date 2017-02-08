@@ -32,9 +32,5 @@
       <td>Letter or Word</td>
       <td>Invalid Input</td>
     </tr>
-    <tr>
-      <td>Letter or Word</td>
-      <td>Invalid Input</td>
-    </tr>
   </tbody>
 </table>
