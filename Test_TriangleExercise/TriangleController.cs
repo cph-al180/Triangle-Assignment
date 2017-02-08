@@ -15,17 +15,22 @@ namespace Test_TriangleExercise
             for (int i = 0; i < sides.Length; i++)
             {
                 string input = Console.ReadLine();
+                while(int.Parse(input) <= 0)
+                {
+                    Console.WriteLine("Invalid input - Must be greater than 0");
+                    input = Console.ReadLine();
+                }
                 try
                 {
                     int output = int.Parse(input);
-                    if (int.TryParse(input, out output) && output > 0)
+                    if (int.TryParse(input, out output))
                     {
                         sides[i] = output;
                     }
                 }
                 catch (FormatException)
                 {
-                    Console.WriteLine("Invalid input - Try again");
+                    Console.WriteLine("Invalid input - Must be an integer");
                 }
             }
             Triangle triangle = new Triangle(sides[0], sides[1], sides[2]);
