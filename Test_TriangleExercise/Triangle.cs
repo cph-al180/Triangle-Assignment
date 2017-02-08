@@ -37,18 +37,39 @@
 
         void SetTriangleType()
         {
-            if(a == b && b == c)
+            if(IsTriangleEquilateral())
             {
                 type = TriangleType.Equilateral;
             }
-            else if(a == b && b != c || b == c && c != a || a == c && c != b)
+            else if(IsTriangleIsosceles())
             {
                 type = TriangleType.Isosceles;
             }
-            else if(a != b && a != c && b != c)
+            else if(IsTriangleScalene())
             {
                 type = TriangleType.Scalene;
             }
+        }
+
+        bool IsTriangleEquilateral()
+        {
+            if (a == b && b == c)
+                return true;
+            return false;
+        }
+
+        bool IsTriangleIsosceles()
+        {
+            if (a == b && b != c || b == c && c != a || a == c && c != b)
+                return true;
+            return false;
+        }
+
+        bool IsTriangleScalene()
+        {
+            if (a != b && a != c && b != c)
+                return true;
+            return false;
         }
     }
 
