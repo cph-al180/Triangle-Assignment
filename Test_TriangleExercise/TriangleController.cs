@@ -1,14 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Test_TriangleExercise
 {
     class TriangleController
     {
 
+        /// <summary>
+        /// Checks if the parameter is less than 1, and returns true or false based on that.
+        /// </summary>
+        /// <param name="output"></param>
+        /// <returns></returns>
         bool IsGreaterThanZero(int output)
         {
             if(output >= 1)
@@ -22,6 +23,11 @@ namespace Test_TriangleExercise
             }
         }
 
+        /// <summary>
+        /// Checks if the parameter is an integer, and returns true or false based on that.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         bool IsInt(string input)
         {
             try
@@ -39,6 +45,9 @@ namespace Test_TriangleExercise
             }
         }
 
+        /// <summary>
+        /// Reads 3 inputs from Console, and creates a Triangle Object based on those. Uses GetTriangleType() to determine TriangleType of Triangle object.
+        /// </summary>
         public void TriangleCreation()
         {
             Console.WriteLine("New Triangle!");

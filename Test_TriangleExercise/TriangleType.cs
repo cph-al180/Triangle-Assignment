@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Test_TriangleExercise
+﻿namespace Test_TriangleExercise
 {
     /// <summary>
     /// Scalene: No sides are equal
